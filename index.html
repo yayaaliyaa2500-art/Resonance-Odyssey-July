@@ -2582,7 +2582,7 @@
         .info-modal-content {
             background: white;
             border-radius: clamp(15px, 3vw, 25px);
-            padding: clamp(16px, 2.5vw, 30px) clamp(30px, 4vw, 50px);
+            padding: clamp(14px, 2vw, 24px) clamp(30px, 4vw, 50px) clamp(20px, 3vw, 30px);
             width: min(95vw, 950px);
             max-width: 950px;
             max-height: calc(95vh - 2rem);
@@ -2597,6 +2597,11 @@
         }
 
         .info-modal-body h2 {
+            margin-top: 0;
+            margin-bottom: clamp(12px, 2vw, 16px);
+        }
+
+        .info-modal-body h3 {
             margin-top: 0;
         }
 
@@ -2615,9 +2620,9 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            margin-bottom: clamp(20px, 3vw, 30px);
+            margin-bottom: clamp(10px, 1.5vw, 16px);
             border-bottom: none;
-            padding-bottom: clamp(15px, 2vw, 20px);
+            padding: 0 clamp(0px, 0vw, 0px) clamp(8px, 1vw, 12px);
             position: sticky;
             top: 0;
             background: white;
