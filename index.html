@@ -8,7 +8,7 @@
     <title>Resonance Odyssey - Journey of Nusantara</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Fredoka+One&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -615,9 +615,9 @@
 
         h1 {
             color: var(--dark-outline);
-            font-family: 'Fredoka One', sans-serif;
-            font-size: clamp(24px, 6vw, 36px);
-            font-weight: 900;
+            font-family: 'Cinzel Decorative', serif;
+            font-size: clamp(20px, 4vw, 28px);
+            font-weight: 700;
             margin-bottom: clamp(8px, 2.5vw, 15px);
         }
 
@@ -3694,37 +3694,28 @@
                 <button class="info-modal-close" onclick="closeInfoModal()">✕</button>
             </div>
 
-            <div class="form-group">
-                <label for="player-name-field">Nama Pemain:</label>
-                <input type="text" id="player-name-field" class="btn-gold" placeholder="Masukkan nama Anda..." style="background: white; color: var(--dark-outline); border: clamp(1px, 0.3vw, 3px) solid var(--border-blue); box-shadow: none; padding: clamp(8px, 2vw, 16px); text-align: left;">
+            <div class="info-modal-body" style="text-align:left;">
+                <h3>TENTANG RESONANCE ODYSSEY</h3>
+                <p><strong>Deskripsi Game</strong></p>
+                <p><strong>Resonance Odyssey</strong> merupakan game edukatif berbasis budaya lokal yang dikembangkan sebagai media <em>stealth assessment</em> untuk mengukur kemampuan <em>scientific reasoning</em> pada materi gelombang bunyi. Berbeda dengan tes konvensional, penilaian dalam <em>Resonance Odyssey</em> dilakukan secara tersamar (<em>stealth assessment</em>), sehingga pemain dapat menyelesaikan berbagai tantangan dalam bentuk permainan tanpa merasakan bahwa mereka sedang mengikuti proses asesmen. Pendekatan ini diharapkan mampu memberikan gambaran kemampuan penalaran ilmiah yang lebih autentik melalui pengalaman bermain yang kontekstual dengan memanfaatkan alat musik tradisional Indonesia sebagai latar permasalahan.</p>
+                <p>Game ini dimainkan secara individu dengan tujuan mengidentifikasi profil kemampuan <em>scientific reasoning</em> pemain pada materi gelombang bunyi. Asesmen dalam game mengadopsi kerangka <em>Lawson Classroom Test of Scientific Reasoning</em> (LCTSR) yang mencakup enam aspek penalaran ilmiah, yaitu <em>Conservation Reasoning, Proportional Reasoning, Control of Variables, Probabilistic Reasoning, Correlational Reasoning,</em> dan <em>Hypothetico-Deductive Reasoning.</em> Hasil permainan digunakan sebagai informasi mengenai kemampuan <em>scientific reasoning</em> pemain tanpa mengganggu pengalaman bermain.</p>
+                <p><strong>Tim Pengembang</strong></p>
+                <p><strong>Tim Dosen</strong></p>
+                <ol style="padding-left: 1.2em;">
+                    <li><strong>Nur</strong><br>Endah Susilowati, M.Pd.</li>
+                    <li><strong>Fitria</strong><br>Arifiyanti, M.Pd.</li>
+                    <li><strong>Putra</strong><br>Habib Dhitareka, M.Pd.</li>
+                </ol>
+                <p><strong>Tim Mahasiswa</strong></p>
+                <ol style="padding-left: 1.2em;">
+                    <li><strong>Muhammad</strong><br>Fadhlan Aprianto</li>
+                    <li><strong>Aliya</strong><br>Dewi Rahmawati</li>
+                </ol>
+                <p><strong>Pendanaan</strong></p>
+                <p>Pengembangan Resonance Odyssey didanai oleh Universitas Pendidikan Indonesia melalui skema/program penelitian Afirmasi Dosen Muda berdasarkan Kontrak Nomor 161/UN40.F7/PT.01.01/2026.</p>
             </div>
-
-            <div class="form-group">
-                <label for="school-name-field">Nama Sekolah:</label>
-                <input type="text" id="school-name-field" class="btn-gold" placeholder="Masukkan nama sekolah..." style="background: white; color: var(--dark-outline); border: clamp(1px, 0.3vw, 3px) solid var(--border-blue); box-shadow: none; padding: clamp(8px, 2vw, 16px); text-align: left;">
-            </div>
-
-            <div class="form-group">
-                <label for="photo-input">Upload Foto:</label>
-                <div class="photo-upload-box" onclick="document.getElementById('photo-input').click()">
-                    <div style="font-size: 30px; margin-bottom: 10px;">📷</div>
-                    <p style="color: var(--dark-outline); margin: 0; font-weight: 600;">Klik untuk upload foto</p>
-                </div>
-                <input type="file" id="photo-input" accept="image/*">
-                <div class="photo-preview">
-                    <img id="photo-preview-img" src="" alt="Preview">
-                    <button type="button" onclick="clearPhoto()" style="background: var(--soft-white); color: white; border: none; padding: clamp(6px, 1.5vw, 12px) clamp(12px, 3vw, 24px); border-radius: clamp(4px, 1vw, 8px); cursor: pointer; font-weight: 600;">Hapus Foto</button>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="text-input">Tulisan/Keterangan:</label>
-                <textarea id="text-input" placeholder="Tulis informasi, pesan, atau keterangan Anda di sini..."></textarea>
-            </div>
-
-            <div class="info-modal-buttons">
-                <button class="btn-cancel" onclick="closeInfoModal()">Batal</button>
-                <button class="btn-submit" onclick="saveInfoAndStartGame()">Simpan & Mulai Game</button>
+            <div class="info-modal-buttons" style="justify-content:center; gap: 14px;">
+                <button class="btn-cancel" onclick="closeInfoModal()">Tutup</button>
             </div>
         </div>
     </div>
