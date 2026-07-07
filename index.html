@@ -2582,27 +2582,40 @@
         .info-modal-content {
             background: white;
             border-radius: clamp(15px, 3vw, 25px);
-            padding: clamp(10px, 1.5vw, 20px) clamp(30px, 4vw, 50px) clamp(18px, 2.5vw, 28px);
+            padding: clamp(18px, 2vw, 22px) clamp(30px, 4vw, 50px) clamp(24px, 2.5vw, 32px);
             width: min(95vw, 950px);
             max-width: 950px;
             max-height: calc(100vh - 3rem);
-            overflow: visible;
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
             animation: slideUp 0.3s ease;
             position: relative;
         }
 
         .info-modal-body {
             font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+            line-height: 1.75;
+            color: var(--dark-outline);
+            font-size: clamp(15px, 1.2vw, 18px);
         }
 
         .info-modal-body h2 {
             margin-top: 0;
-            margin-bottom: clamp(8px, 1.5vw, 12px);
+            margin-bottom: clamp(16px, 2vw, 20px);
+            font-size: clamp(24px, 4vw, 30px);
+            text-align: center;
         }
 
         .info-modal-body h3 {
-            margin-top: 0;
+            margin: clamp(18px, 2vw, 24px) 0 10px;
+            font-size: clamp(18px, 2.5vw, 22px);
+        }
+
+        .info-modal-body h4 {
+            margin: clamp(14px, 1.5vw, 18px) 0 8px;
+            font-size: clamp(16px, 2.1vw, 18px);
+            font-weight: 700;
         }
 
         @keyframes slideUp {
@@ -2617,15 +2630,15 @@
         }
 
         .info-modal-header {
+            position: absolute;
+            top: clamp(16px, 2vw, 18px);
+            right: clamp(16px, 2vw, 18px);
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            margin-bottom: 0;
-            border-bottom: none;
-            padding: clamp(10px, 1.2vw, 14px) 0 clamp(10px, 1.2vw, 14px);
-            position: sticky;
-            top: 0;
-            background: white;
+            padding: 0;
+            margin: 0;
+            background: transparent;
             z-index: 2;
         }
 
@@ -2638,12 +2651,12 @@
         .info-modal-close {
             background: none;
             border: none;
-            font-size: 32px;
+            font-size: clamp(26px, 3vw, 32px);
             color: var(--dark-outline);
             cursor: pointer;
             padding: 0;
-            width: 40px;
-            height: 40px;
+            width: auto;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2728,10 +2741,11 @@
         }
 
         .info-modal-buttons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: clamp(12px, 2vw, 15px);
+            display: flex;
+            justify-content: center;
+            gap: clamp(14px, 2vw, 18px);
             margin-top: clamp(20px, 3vw, 30px);
+            width: 100%;
         }
 
         .btn-cancel, .btn-submit {
@@ -3472,7 +3486,6 @@
                 <div class="home-card" onclick="openInfoModal()">
                     <span class="home-card-icon">❓</span>
                     <h3 class="home-card-title">Tentang</h3>
-                    <p class="home-card-desc">Tambahkan info Anda</p>
                 </div>
             </div>
         </div>
