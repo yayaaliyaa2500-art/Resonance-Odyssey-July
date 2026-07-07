@@ -2582,7 +2582,7 @@
         .info-modal-content {
             background: white;
             border-radius: clamp(15px, 3vw, 25px);
-            padding: clamp(30px, 4vw, 50px);
+            padding: clamp(16px, 2.5vw, 30px) clamp(30px, 4vw, 50px);
             width: min(95vw, 950px);
             max-width: 950px;
             max-height: calc(95vh - 2rem);
@@ -2590,6 +2590,14 @@
             box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
             animation: slideUp 0.3s ease;
             position: relative;
+        }
+
+        .info-modal-body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .info-modal-body h2 {
+            margin-top: 0;
         }
 
         @keyframes slideUp {
